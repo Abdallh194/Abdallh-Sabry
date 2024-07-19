@@ -18,7 +18,7 @@ const HomePage = () => {
         <Container>
           <Row>
             <Col md={12} lg={6} className="Info-Card">
-              <div className="top-head">Hello There I'am</div>
+              <div className="top-head">Hello There Iam</div>
               <div className="name">Abdallh Rakha</div>
               <div className="job">
                 <span>Creative</span> Frontend
