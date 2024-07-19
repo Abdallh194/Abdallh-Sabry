@@ -1,0 +1,29 @@
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+  border-right: 2px solid #810092;
+  background: $gray-color;
+  color: white;
+  .logo {
+    margin-top: 80px;
+    text-align: center;
+
+    .name {
+      font-size: 23px;
+      font-size: 25px;
+      margin-top: -10px;
+      font-family: $header-font;
+    }
+  }
+  .info {
+    text-align: center;
+  }
+  .Link {
+    display: block;
+    color: white;
+    text-decoration: none !important;
+    margin-left: 9px;
+    margin-top: 20px;
+  }
+  .active {
+    margin-top: 35px;
+  }
+}
