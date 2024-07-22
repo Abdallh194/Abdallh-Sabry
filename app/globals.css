@@ -15,6 +15,23 @@ html {
   height: 60px;
 }
 
+.CopyRight {
+  padding: 10px 0;
+  background-color: white;
+}
+.CopyRight .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    display: block !important;
+    text-align: center;
+    line-height: 2;
+  }
+}
 @media (max-width: 1200px) {
   .MuiAvatar-root {
     width: 45px;
@@ -331,7 +348,7 @@ html {
   background-color: rgba(63, 57, 69, 0.968627451);
   position: relative;
   z-index: 1;
-  max-width: 1600px;
+  max-width: 84%;
   margin: auto;
   margin-top: 30px;
   border-radius: 15px;
@@ -391,6 +408,11 @@ html {
   border-radius: 10px;
   cursor: pointer;
 }
+@media (max-width: 1300px) {
+  .ResponsiveAppBar {
+    max-width: 100%;
+  }
+}
 @media (max-width: 992px) {
   .ResponsiveAppBar .menu {
     margin-left: 0;
@@ -446,4 +468,220 @@ html {
 }
 .Drawer .active {
   margin-top: 45px;
+}
+
+.RecentWork {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+.RecentWork .container {
+  max-width: 83%;
+}
+.RecentWork .top {
+  font-size: 21px;
+  color: rgba(255, 255, 255, 0.725);
+}
+.RecentWork .head {
+  margin: 5px auto;
+  font-size: 35px;
+  font-weight: 700;
+}
+.RecentWork .head span {
+  background: linear-gradient(45deg, #5600f7, #d401f0);
+  padding: 4px;
+}
+.RecentWork .row {
+  margin-top: 67px;
+}
+.RecentWork .Image-Card {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.RecentWork .img-fluid {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+.RecentWork .img-fluid:hover {
+  filter: brightness(0.8);
+}
+@media (max-width: 992px) {
+  .RecentWork .Image-Card {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .RecentWork .container {
+    max-width: 97%;
+  }
+  .RecentWork .row {
+    margin-top: 7px;
+  }
+  .RecentWork .top {
+    font-size: 17px;
+  }
+  .RecentWork .head {
+    font-size: 21px;
+  }
+}
+
+.AboutMe {
+  margin-top: 120px;
+  color: white;
+  position: relative;
+}
+.AboutMe .bg-line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/about.png") no-repeat;
+  background-size: cover;
+  left: 0;
+  opacity: 0.4;
+}
+.AboutMe .container {
+  max-width: 83%;
+}
+.AboutMe .top {
+  font-size: 21px;
+  color: rgba(255, 255, 255, 0.853);
+}
+.AboutMe .head {
+  font-size: 38px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+.AboutMe .head span {
+  font-family: "Danfo", serif;
+  display: inline-block;
+  color: #d401f0;
+  transform: rotate(13deg);
+}
+.AboutMe .Info-Card {
+  background-color: #3f3945;
+  position: relative;
+  margin-top: 40px;
+  z-index: 2;
+  text-align: center;
+  padding: 40px 20px;
+  width: calc(25% - 25px);
+  margin: 10px auto;
+  border: 2px solid rgba(103, 99, 107, 0.7607843137);
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.AboutMe .Info-Card .icon {
+  width: 100px;
+  padding: 22px;
+  height: 100px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #5600f7, #d401f0);
+}
+.AboutMe .Info-Card .header {
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 22px;
+}
+.AboutMe .Info-Card .info {
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 17px;
+  font-weight: 500;
+}
+.AboutMe .custom-Magin {
+  margin-top: 100px;
+}
+@media (max-width: 992px) {
+  .AboutMe .container {
+    max-width: 100%;
+  }
+  .AboutMe .Info-Card {
+    width: 48%;
+  }
+}
+@media (max-width: 767px) {
+  .AboutMe {
+    margin-top: 60px;
+  }
+  .AboutMe .Info-Card {
+    width: 95%;
+    margin-top: 0px;
+  }
+  .AboutMe .loremCard {
+    display: none !important;
+  }
+}
+
+.Skills {
+  color: white;
+  margin-top: 100px;
+}
+.Skills .container {
+  max-width: 83%;
+}
+.Skills .skills-Details {
+  margin-top: 19px;
+}
+.Skills .skills-Details .lable {
+  font-size: 22px;
+  font-weight: 700;
+}
+.Skills .skills-Details .progress-container {
+  background-color: white;
+  height: 5px;
+  width: 100%;
+}
+.Skills .skills-Details .progress-width {
+  background: linear-gradient(45deg, #5600f7, #d401f0);
+  height: 100%;
+  position: relative;
+}
+.Skills .skills-Details .progress-width::before {
+  position: absolute;
+  content: attr(data-degree);
+  -webkit-clip-path: polygon(100% 0, 100% 46%, 48% 100%, 0 46%, 0 45%, 0% 0%);
+          clip-path: polygon(100% 0, 100% 46%, 48% 100%, 0 46%, 0 45%, 0% 0%);
+  width: 47px;
+  height: 40px;
+  text-align: center;
+  background: linear-gradient(45deg, #5600f7, #d401f0);
+  right: -24px;
+  top: -46px;
+  transition: 0.18s;
+  opacity: 0;
+}
+.Skills .skills-Details .progress-width:hover::before {
+  opacity: 1;
+}
+.Skills .head {
+  font-size: 31px;
+  font-weight: 700;
+}
+.Skills .info {
+  font-size: 19px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.Skills .Image-Card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Skills .Image-Card .img-fluid {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .Skills {
+    margin-top: 45px;
+  }
+  .Skills .container {
+    max-width: 97%;
+  }
+  .Skills .Image-Card {
+    margin: 45px 0px;
+  }
 }/*# sourceMappingURL=globals.css.map */
