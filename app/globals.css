@@ -334,7 +334,11 @@ html {
     top: -18px;
     left: -18px;
   }
+  .HomePage .Image-Card {
+    display: flex;
+  }
   .HomePage .Image-Card .img-fluid {
+    margin: 1px;
     display: inline;
     max-width: 73%;
   }
@@ -513,6 +517,9 @@ html {
   }
 }
 @media (max-width: 767px) {
+  .RecentWork {
+    margin-top: 60px;
+  }
   .RecentWork .container {
     max-width: 97%;
   }
@@ -624,6 +631,7 @@ html {
   max-width: 83%;
 }
 .Skills .skills-Details {
+  text-align: left;
   margin-top: 19px;
 }
 .Skills .skills-Details .lable {

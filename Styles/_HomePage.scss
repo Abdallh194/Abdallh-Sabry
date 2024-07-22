@@ -303,7 +303,9 @@
       }
     }
     .Image-Card {
+      display: flex;
       .img-fluid {
+        margin: 1px;
         display: inline;
         max-width: 73%;
       }
